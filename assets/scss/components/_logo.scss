@@ -1,0 +1,66 @@
+// Logo
+.logo {
+    width: 110px;
+    height: $hh;
+    
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+
+    font-family: $title-font;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    &__lamp {
+        font-size: 1rem;
+        padding-left: 5px;
+
+        transition: all .2s linear;
+    }
+
+    &__a{
+        transition: all .2s linear;
+    }
+
+    &__a:hover {
+        font-size: 1.3rem;
+    }
+
+    &--yellow {
+        color: $yellow;
+
+        & .logo__lamp {
+            color: $yellow;
+        }
+
+        & .logo__a:hover {
+            color: $light;
+            font-size: 1.3rem;
+        }
+        
+        & .logo__a:hover .logo__lamp {
+            color: $light;
+        }
+    }
+
+    &--light {
+        color: $light;
+
+        & .logo__lamp {
+            color: $light;
+        }
+
+        & .logo__a:hover {
+            color: $yellow;
+            font-size: 1.3rem;
+        }
+        
+        & .logo__a:hover .logo__lamp {
+            color: $yellow;
+        }
+    }
+}

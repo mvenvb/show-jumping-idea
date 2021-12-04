@@ -1,0 +1,113 @@
+// Header
+
+.container_in-header {
+    background-color: $yellow;
+    // width: 100%;
+    // max-width: 1230px;
+    // padding: 0 15px;
+    margin: 0 auto;
+    height: $hh;
+}
+
+.header {
+    background-color: $brown;
+
+    height: $hh;
+
+    color: $brown;
+    font-size: 1.2rem; //18px
+    font-family: $title-font;
+    // font-size: 1.125rem; //18px
+    // font-family: $font;
+    font-weight: 700;
+
+    box-shadow: 0 7px 5px rgba($text-color, 0.4);
+    position: relative;
+    z-index: 10;
+
+
+    &__triangle {
+        display: block;
+        fill: $brown;
+    }
+
+    &__edge {
+        display: flex;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $hh;
+    }
+
+    &__logo {
+        padding: 0 0.625rem;
+
+        background: $brown;
+    }
+
+    &__phone {
+        background-color: $brown;
+        color: $yellow;
+        font-family: $title-font;
+        letter-spacing: .1rem;
+
+        height: $hh;
+        line-height: $hh;
+        padding-right: 0.625rem;
+        // padding-right: 10px;
+
+        &_a {
+            transition: color .2s linear;
+        }
+
+        &_a:hover{
+            color: $light;
+        }
+    }
+
+
+
+}
+
+// Nav
+.nav {
+    // height: 100px;
+    display: flex;
+    align-items: center;
+
+    &__item {
+        width: auto;
+        height: $hh;
+        transform: skewX(-30deg);
+
+        transition: all .3s linear;
+
+        &:hover {
+            background-color: $brown;
+            color: $light
+        }
+    }
+
+    // &__it {
+    //     transform: skewX(20deg);
+    // }
+
+    &__link {
+        text-decoration: none;
+        display: block;
+        // height: 100px;
+
+        letter-spacing: .1rem;
+        line-height: $hh;
+        transform: skew(30deg);
+        padding: 0 25px;
+
+        // &:hover {
+        //     background-color: $brown;
+        //     color: $light
+        // }
+    }
+}

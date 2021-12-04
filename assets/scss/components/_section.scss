@@ -1,0 +1,93 @@
+// Section
+
+.section {
+    background-color: $light;
+
+    text-align: center;
+
+    padding: 25px 0 40px;
+
+}
+
+.section__header {
+    font-size: 2rem;
+    font-family: $title-font;
+    // font-family: $font;
+    font-weight: 700;
+    color: $brown;
+    letter-spacing: .2rem;
+    
+}
+
+.section__line {
+    margin: 30px auto 50px;
+
+    width: 200px;
+    height: 10px;
+
+    background-color: $brown;
+    
+
+    position: relative;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        display: block;
+
+        width: 40px;
+        height: 10px;
+
+        background-color: $light;
+        border: 2px solid $brown;
+    }
+
+    &::before {
+        left: 40px;
+        top: 0;
+    }
+
+    &::after {
+        right: 40px;
+        top: 0;
+    }
+}
+
+.section__text {
+    width: 820px;
+    margin: 0 auto;
+
+    color: $text-color;
+    font-style: 1.5rem;
+}
+
+.section__phrase {
+    margin-top: 20px;
+
+    font-family: $title-font;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: $brown;
+
+    &_accent {
+        margin-top: 10px;
+    }
+}
+
+// Dark section
+.section--dark {
+    background-color: $brown;
+
+    & .section__header {
+        color: $light;
+    }
+
+    & .section__line {
+        background-color: $light;
+
+        &::after,&::before {
+            background-color: $brown;
+            border-color: $light;
+        }
+    }
+}

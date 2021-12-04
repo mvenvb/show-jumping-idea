@@ -1,0 +1,25 @@
+// $logo-font: 'Carter One', cursive;
+$title-font: 'Neucha', cursive;
+$font: 'Roboto Slab', serif;
+
+
+// header_height
+$hh: 60px;
+
+
+// цвета
+$text-color: #1A1E20;
+$light: #F1F2F1;
+$brown: #523D3F;
+$yellow: #F5C042;
+$blue: #89D3D6;
+$dark-blue: #415C5E;
+// $dark-blue: #5B8486;
+
+
+// for scrollbar
+$scrollbarBg: $brown;
+$scrollbarThumb: $blue;
+$scrollbarWidth: 10px;
+$scrollbarBorder: 2px solid $dark-blue;
+$scrollbarBorderRadius: 6px; //calc($scrollbarWidth / 3);

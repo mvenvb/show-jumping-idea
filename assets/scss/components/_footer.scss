@@ -1,0 +1,136 @@
+//Footer
+.footer {
+    background-color: $brown;
+    padding: 30px 0;
+
+    font-family: $title-font;
+    font-size: 1rem;
+
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        margin-bottom: 10px;
+    }
+
+
+    &__col {
+        padding: 0 50px;
+        border-right: 2px $light solid;
+
+        &--first {
+            width: 20%;
+        }
+
+        &--second {
+            width: 30%;
+            // padding-top: 20px;
+        }
+
+        &--third {
+            width: 42%;
+            border-right: 0;
+        }
+
+
+    }
+
+    &__menu {
+        width: 85px;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.menu {
+    color: $light;
+    // font-size: .9rem;
+    letter-spacing: .1rem;
+    font-family: $title-font;
+
+    &__item {
+        display: block;
+        position: relative;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        transition: all .2s linear;
+    }
+
+    &__item:hover {
+        color: $yellow;
+    }
+
+    &__item::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+
+        background-color: $yellow;
+
+        transition: width 0.4s ease-in-out;
+    }
+
+    &__item:hover:after,
+    &__item:focus:after {
+        width: 100%;
+    }
+}
+
+/*menu*/
+
+.blogs {
+    text-align: center;
+    color: $light;
+    letter-spacing: .1rem;
+
+    &__item {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+    }
+}
+
+.sendmail {
+    // display: flex;
+
+    &__input {
+        outline: 0;
+        border-radius: 10px;
+        border: 0;
+        height: 25px;
+        width: 220px;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+
+        font-family: $font;
+        color: $text-color;
+        font-size: .9rem;
+        font-weight: 700;
+
+        &--ques {
+            width: 350px;
+            height: 120px;
+            // margin-bottom: 0;
+        }
+    }
+
+    &__input::placeholder {
+        font-family: $font;
+        font-size: .9rem;
+    }
+}

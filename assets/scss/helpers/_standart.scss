@@ -1,0 +1,48 @@
+body {
+    font-family: $font;
+    // font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $text-color;
+
+
+    scrollbar-width: $scrollbarWidth;
+    scrollbar-color: $scrollbarThumb $scrollbarBg;
+
+    &::-webkit-scrollbar {
+        width: $scrollbarWidth;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $scrollbarBg;
+        // border-radius: $scrollbarBorderRadius;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollbarThumb;
+        border-radius: $scrollbarBorderRadius;
+        border: $scrollbarBorder;
+    }
+}
+
+h1 {
+    // font-family: 'Outfit', sans-serif;
+    // // font-family: $title-font;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $light;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
